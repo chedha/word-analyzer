@@ -120,7 +120,7 @@ public class MostRepeatedWord {
 			
 		}
 		
-		//System.out.println();
+		
 		//System.out.println();
 		System.out.println("The top 20 word frequencies are: ");
 		
