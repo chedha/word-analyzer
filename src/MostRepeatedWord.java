@@ -25,7 +25,7 @@ public class MostRepeatedWord {
 
 		while (line != null) {
 
-			// System.out.println("Processing line: " + line);
+			
 
 			if (!line.trim().equals("")) {
 				String[] words = line.split(" ");
@@ -36,7 +36,7 @@ public class MostRepeatedWord {
 						continue;
 					}
 					String processed = word.toLowerCase();
-					//processed = processed.replace(",", "");
+					
 					processed = processed.replaceAll("[^a-zA-Z0-9]", "");
 
 					if (frequency.containsKey(processed)) {
@@ -54,7 +54,7 @@ public class MostRepeatedWord {
 
 		}		
 				
-		//System.out.println(frequency);
+		
 		
 		int mostFrequentlyUsed = 0;
 		String theWord = null;
@@ -70,35 +70,18 @@ public class MostRepeatedWord {
 			
 		}
 		
-		// System.out.printf("The most frequently used word is '%s', %d, times", theWord, mostFrequentlyUsed);
-		
-		//System.out.println();
-		//System.out.println();
-		
-		// Now let's sort HashMap by keys first
-		// all you need to do is create a TreeMap with mappings of HashMap
-		// TreeMap keeps all entries in sorted order		
-		
-		
-		//System.out.println("HashMap after sorting by keys in ascending order ");
+	
 		
 		TreeMap<String, Integer> sorted = new TreeMap<>(frequency);
 		Set<Entry<String, Integer>> mappings = sorted.entrySet();
 		
 		for(Entry<String, Integer> mapping : mappings) {
 			
-			//System.out.println(mapping.getKey() + " ==> " + mapping.getValue());
+			
 			
 		}
 		
-		//System.out.println();
-		//System.out.println();
 		
-		// Sorting HashMap by values
-		// no direct way to sort HashMap by values
-		// need to create comparator
-		// that takes Map.Entry object and arranges them in order
-		// of increasing or decreasing value
 	
 		List<Entry<String, Integer>> listOfEntries = new ArrayList<Entry<String, Integer>>(mappings);
 		
@@ -112,16 +95,15 @@ public class MostRepeatedWord {
 			
 		}
 		
-		//System.out.println("HashMap after sorting entries by values");
+		
 		Set<Entry<String, Integer>> entrySetSortedByValue = sortedbyValue.entrySet();
 		
 		for(Entry<String, Integer> mapping : entrySetSortedByValue) {
-		//	System.out.println(mapping.getKey() + " ==> " + mapping.getValue());
+		
 			
 		}
 		
-		//System.out.println();
-		//System.out.println();
+		
 		System.out.println("The top 20 word frequencies are: ");
 		
 		List<Entry<String, Integer>> sortedListOfEntries = new ArrayList<Entry<String, Integer>>(entrySetSortedByValue);
