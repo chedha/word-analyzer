@@ -104,6 +104,10 @@ public class MostRepeatedWord {
 		}
 		
 		
+<<<<<<< HEAD
+=======
+		//System.out.println();
+>>>>>>> 5b1e272e6c443ede7b5ce4f850715e31b0fdd02e
 		System.out.println("The top 20 word frequencies are: ");
 		
 		List<Entry<String, Integer>> sortedListOfEntries = new ArrayList<Entry<String, Integer>>(entrySetSortedByValue);
